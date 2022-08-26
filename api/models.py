@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class citizens(models.Model):
+class users(models.Model):
     id = models.IntegerField(unique=True, primary_key=True)
     first_name = models.CharField(max_length=200, null=False, blank=False)
     last_name = models.CharField(max_length=200, null=False, blank=False)

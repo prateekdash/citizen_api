@@ -3,9 +3,9 @@ from.import views
 
 urlpatterns = [
     #path('', views.apiOverview, name = 'apiOverview'),
-    path('citizens-GET/', views.ShowAll, name ='citizens-GET'),
-    path('citizens-detail/<int:pk>/', views.Viewcitizens, name ='citizens-GET'),
-    path('citizens-create/', views.Createcitizens, name ='citizens-Create'),
-    path('citizens-update/<int:pk>/', views.Updatecitizens, name ='citizens-update'),
-    path('citizens-delete/<int:pk>/', views.deletecitizens, name ='citizens-delete'),
+    path('users-GET/', views.ShowAll, name ='users-GET'),
+    path('users-detail/<int:pk>/', views.viewusers, name ='users-GET'),
+    path('users-create/', views.createusers, name ='users-Create'),
+    path('users-update/<int:pk>/', views.updateusers, name ='users-update'),
+    path('users-delete/<int:pk>/', views.deleteusers, name ='users-delete'),
 ]
